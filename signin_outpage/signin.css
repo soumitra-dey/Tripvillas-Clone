@@ -1,0 +1,49 @@
+#select{
+    width: 8%;
+    height: 34px;
+    }
+    #mobile{
+        width: 50%;
+        height: 30px;
+    }
+   
+    #numberbar{
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+  
+ #submit{
+  background-color:
+#1e87f0 ;
+color: white;
+padding: 10px;
+border: none;
+
+
+ }
+ #only{
+  margin-top: 1px;
+  margin-left: 5vw;
+  font-size: 12px;
+ }
+ #signup{
+  
+padding: 10px;
+border: none;
+ }
+      
+ #button{
+  margin-left: 30%;
+ }
+    hr{
+      margin: 30px;
+    }
+    #div{
+      width: 60%;
+      margin: auto;
+  
+  
+    }
+    h1{
+      margin-left: 30px;
+    }

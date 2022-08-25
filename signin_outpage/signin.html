@@ -5,57 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      #select{
-      width: 8%;
-      height: 34px;
-      }
-      #mobile{
-          width: 50%;
-          height: 30px;
-      }
-     
-      #numberbar{
-          margin-bottom: 10px;
-          margin-left: 30px;
-      }
+    <link rel="stylesheet" href="./signin.css">
     
-   #submit{
-    background-color:
-#1e87f0 ;
-color: white;
-padding: 10px;
-border: none;
-
-
-   }
-   #only{
-    margin-top: 1px;
-    margin-left: 5vw;
-    font-size: 12px;
-   }
-   #signup{
-    
-padding: 10px;
-border: none;
-   }
-        
-   #button{
-    margin-left: 30%;
-   }
-      hr{
-        margin: 30px;
-      }
-      #div{
-        width: 60%;
-        margin: auto;
-    
-    
-      }
-      h1{
-        margin-left: 30px;
-      }
-    </style>
   </head>
   <body>
    <div id="div">
@@ -122,28 +73,5 @@ border: none;
    </div>
   </body>
 </html>
-<script>
- document.querySelector('#signup').addEventListener('click',login)
- 
-function login(){
-    window.location.href = 'signup.html'
-}
-let loginData = JSON.parse(localStorage.getItem('logData'))
-console.log(loginData)
-document.querySelector('form').addEventListener('submit',signup);
-function signup(){
-    event.preventDefault()
-    
-    let logmobile=document.getElementById("mobile").value
-
-    loginData.forEach(function(el){
-        if(el.mobile==logmobile){
-            alert('login successful')
-            if(alert('login successful')== alert('login successful'))
-             {window.location.href="home.html"}
-            
-        }
-    })
-} 
-</script>
+<script src="./signin.js"></script>
 

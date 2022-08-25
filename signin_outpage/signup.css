@@ -1,0 +1,68 @@
+#select {
+    width: 8%;
+    height: 34px;
+}
+
+#mobile {
+    width: 62%;
+    height: 30px;
+}
+
+#inputtag {
+    display: grid;
+    width: 63%;
+    height: 30px;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 30px;
+}
+
+#numberbar {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.out {
+    display: grid;
+    margin-top: 10px;
+    width: 67%;
+    height: 30px;
+    margin-left: 30px;
+}
+
+#button {
+
+    margin-left: 50%;
+}
+#submit{
+background-color:
+#1e87f0 ;
+color: white;
+padding: 10px;
+border: none;
+
+
+}
+#only{
+margin-top: 1px;
+margin-left: 4vw;
+font-size: 12px;
+}
+#cancel{
+
+padding: 10px;
+border: none;
+}
+
+hr {
+    margin: 30px;
+}
+
+#div {
+    width: 40%;
+    margin: auto;
+}
+
+h1 {
+    margin-left: 30px;
+}
