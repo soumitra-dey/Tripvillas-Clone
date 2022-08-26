@@ -239,3 +239,96 @@
     font-size: 15px;
     color: rgb(124, 124, 124);
 }
+
+.holidayhome{
+    width: 90vw;
+}
+.holidayhome>div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+}
+.holidayhome img{
+    width: 100%;
+    height: 200px;
+}
+.holidayhome>div>:nth-child(2){
+    color: rgb(151, 150, 150);
+    font-size: 14px;
+    text-align: left;
+    margin: 0px;
+}
+.holidayhome>div>:nth-child(3){
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    margin: 0px;
+    color: blue;
+}
+.holidayhome>div>:nth-child(4){
+    font-size: 15px;
+    text-align: left;
+    margin: 0px;
+}
+.holidayhome>div>:nth-child(5){
+    font-size: 10px;
+    text-align: left;
+    margin: 0px;
+    color: blue;
+}
+.holidayhome>div>:nth-child(6){
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    margin: 0px;
+    color: blue;
+}
+.holidayhome>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.holidayhome2{
+    width: 90vw;
+}
+.holidayhome2>div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+}
+.holidayhome2>div>div{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.holidayhome2 img{
+    width: 100%;
+    height: 200px;
+}
+.holidayhome2>div>div>div{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(32, 32, 32, 0.795);
+    color: rgb(168, 168, 168);
+    font-weight: 500;
+    width: 100%;
+    font-size: 14px;
+}
+.holidayhome2 p{
+    margin: 0px;
+}
+.holidayhome2>div>:nth-child(2){
+    color: royalblue;
+    font-size: 14px;
+    font-weight: 500;
+}
+.holidayhome2>div>:nth-child(3){
+    font-size: 14px;
+}
+.holidayhome2>div>:nth-child(4){
+    font-size: 12px;
+}
+.holidayhome2>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}

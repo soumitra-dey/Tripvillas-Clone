@@ -1,23 +1,3 @@
-
-let citybtn=document.querySelector("#citytype_city");
-let typesbtn=document.querySelector("#citytype_types");
-let addlist=document.querySelector(".addlist")
-let typeslist=document.querySelector(".typeslist")
-
-
-citybtn.addEventListener("click", ()=>{
-    citybtn.style.borderBottom="1px solid blueviolet";
-    typesbtn.style.borderBottom="0px";
-    addlist.classList.remove("flag")
-    typeslist.classList.add("flag")
-})
-typesbtn.addEventListener("click", ()=>{
-    citybtn.style.borderBottom="0px"
-    typesbtn.style.borderBottom="1px solid blueviolet"
-    typeslist.classList.remove("flag")
-    addlist.classList.add("flag")
-})
-
 let data=[
     {
         refId:"#14001111",
@@ -189,54 +169,60 @@ let data=[
     },
 ]
 
-data.forEach(function(elem){
-    let div=document.createElement("div");
-    div.setAttribute("class","swiper-slide")
-    let img=document.createElement("img");
-    img.src=elem.image;
-    let p1=document.createElement("p");
-    p1.innerText=`Ref Id #${elem.refId}`
-    let p2=document.createElement("p");
-    p2.innerText=elem.name;
-    let p3=document.createElement("p");
-    p3.innerText=elem.location
-    let p4=document.createElement("p");
-    let spec="";
-    for (let i=0;i<3;i++) {
-        spec=spec+elem.specs[i]+" | "
-    }
-    p4.innerText=spec+"..."
-    let p5=document.createElement("p");
-    p5.innerText=`₹${elem.price} per night`
+document.querySelector("#datacount").innerText=`Total ${data.length} results`;
 
-    div.append(img,p1,p2,p3,p4,p5);
-    document.querySelector(".holidayhome").append(div)
-})
 
-for (let i=0;i<data.length;i++) {
-    let main=document.createElement("div");
-    main.setAttribute("class","swiper-slide")
-    let imgdiv=document.createElement("div");
-    let img=document.createElement("img");
-    img.src=data[i].image
-    let pos=document.createElement("div");
-    let p1=document.createElement("p");
-    p1.innerText=data[i].name
-    let p2=document.createElement("p");
-    p2.innerText=data[i].location
-    let p3=document.createElement("p");
-    p3.innerText="Rated 4.5/5"
-    let p4=document.createElement("p");
-    p4.innerText="Excellent Stay"
-    let p5=document.createElement("p");
-    p5.innerText="The house and rooms are very beautiful..."
+let appenddata=(data)=>{
+    document.querySelector("#appenddata").innerHTML="";
+    data.forEach(function(elem){
+        let div=document.createElement("div");
+        let img=document.createElement("img");
+        img.src=elem.image;
+        child_div=document.createElement("div");
+        let p1=document.createElement("p");
+        p1.innerText=`Ref Id #${elem.refId}`
+        let p2=document.createElement("p");
+        p2.innerText=elem.name;
+        let p3=document.createElement("p");
+        p3.innerText=elem.location
+        let p4=document.createElement("div");
+        
+        for (let i=0;i<elem.specs.length;i++) {
+            let child_p=document.createElement("p");
+            child_p.innerText=elem.specs[i];
+            p4.append(child_p)
+        }
+        let p5=document.createElement("p");
+        p5.innerText=`₹${elem.price}.00 `
+        let p5_span=document.createElement("span")
+        p5_span.innerText="per night"
+        let p6=document.createElement("p");
+        p6.innerText="NON REFUNDABLE CANCELLATION POLICY"
 
-    pos.append(p1,p2)
-    imgdiv.append(img,pos);
-    main.append(imgdiv,p3,p4,p5);
-    document.querySelector(".holidayhome2").append(main);
+        p5.append(p5_span);
+        child_div.append(p1,p2,p3,p4,p5,p6)
+        div.append(img,child_div);
+        document.querySelector("#appenddata").append(div)
+    })
 }
 
-document.querySelector("#searchbtn").addEventListener("click", function(){
-    window.location.href="../search page/search.html"
+appenddata(data);
+
+document.querySelector("#sortbyprice").addEventListener("change",function(){
+    let srt=document.querySelector("#sortbyprice").value;
+    if (srt=="l2h") {
+        let mod_data=data.sort(function(a,b){
+            return Number(a.price)-Number(b.price);
+        })
+        appenddata(mod_data);
+    }else if(srt=="h2l") {
+        let mod_data=data.sort(function(a,b){
+            return Number(b.price)-Number(a.price);
+        })
+        appenddata(mod_data);
+    } else if(srt=="nor"){
+        appenddata(data);
+    }
 })
+
+
