@@ -7,7 +7,7 @@ let extradestination=[
     {
         link:"https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/15323035/highland_1_mob_thumbnail.jpeg",
         name:"1 Double A/C Bedroom with Bath",
-        location:"Candolim,Goa,INDIA"
+        location:"Mashobra, Himachal Pradesh, India"
     },
     {
         link:"https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/22911732/30637_398705468650_5273661_n_mob_thumbnail.jpeg",
@@ -65,6 +65,11 @@ function dispaly(extradestination){
         maindiv.setAttribute("id","maindiv")
         let div=document.createElement("div")
         div.setAttribute("id","div")
+        div.onclick = () => {
+         
+           
+            window.location.href = "buy.html";
+          };
       
         let img=document.createElement("img")
         img.src=ele.link
