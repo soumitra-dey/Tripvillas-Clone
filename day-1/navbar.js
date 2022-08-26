@@ -8,10 +8,10 @@ function getnavbar(){
         </h1>
         
         <ul class="right">
-            <ul id="signin"><span><img id="userimg" src="https://cdn-user-icons.flaticon.com/77563/77563239/1661351548416.svg?token=exp=1661449500~hmac=50be8557fc9f6fa97812c965ed5f6181" alt="error"></span>
+            <ul id="signin"><span><img id="userimg" src="https://i.ibb.co/7N39t8r/Capture3.png" alt="error"></span>
                 <ul id="sign">
-                    <li ><a href="">SIGN IN</a> </li>
-                    <li ><a href="">SIGN UP</a> </li>
+                    <li ><a href="../signin_outpage/signin.html">SIGN IN</a> </li>
+                    <li ><a href="../signin_outpage/signup.html">SIGN UP</a> </li>
                 </ul>
                 
             </ul>

@@ -4,48 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <title>Document</title>
-</head>
-<style>
-    #main-container{
-        border: 1px solid black;
-        width: 98%;
-        margin: auto;
-        height: 600px;
-        background-image: url(https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/Pimal2-1.2d5d237dbd32.jpg);
-        background-repeat: no-repeat;
-        background-size:cover
-    }
-</style>
-<body>
-    <div id="main-container">
 
-        <div id="mainheading" style="width: 75% ;height: 80px; margin: auto; margin-top: 16%; margin-left: 15%;" >
+    <link rel="stylesheet" href="../Home/home.css"> 
+    <link rel="stylesheet" href="../day-1/navbar.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../footer/footer.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Home</title>
+</head>
+<body>
+
+    <!-- ****************************navbar********************** -->
+
+    <div id="container"></div>
+    
+
+    <div id="main-container" >
+
+        <div id="mainheading">
             <h1 style="font-weight: bold; color:white;">Book <span style="text-decoration: line-through;">Hotels</span> Vacation Rentals <br><span class="block">Top Holiday Homes - Villas, Apartments &amp;  Homestays</span></h1>
         </div>
 
-        <div id="main-form" style="border: 1px solid gray;width: 75% ;height: 80px; margin: auto; background-color:white;margin-left: 15%;" >
-
-            <div id="form" style="display:flex;margin: auto; width: 90%;">
-
-                 <div id="icon" style="color: gray;margin-top: 25px; font-size: 20px; border: 1px solid gray;">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+        <div id="searchdiv">
+            <div id="search_option">
+                <div style="height:40px;">
+                    <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png" alt="">
+                    <input placeholder="Enter place"   id="country"/>
                 </div>
-                <input  style="font-size: 20px;margin-top: 25px;" placeholder="enter place" id="place">
-
-                 <div id="icon" style="color: gray;margin-top: 25px; font-size: 20px; border: 1px solid gray;">
-                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <div style="height:40px;">
+                    <img src="https://i.ibb.co/dL9VtbW/Screenshot-2022-08-24-101433.png" alt="">
+                    <input placeholder="Check In"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date1" />
                 </div>
-                <input placeholder="Check In" style="font-size: 20px;margin-top: 25px;"  class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
-                 <div id="icon" style="color: gray;margin-top: 25px; font-size: 20px; border: 1px solid gray;">
-                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <div style="height:40px;">
+                    <img src="https://i.ibb.co/K6y5m1m/Screenshot-2022-08-24-101448.png" alt="">
+                    <input placeholder="Check Out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date2" />
                 </div>
-                <input  placeholder="Check Out" style="font-size: 20px;margin-top: 25px;"  class="textbox-y" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date2" />
-                
-                
-                <select name="" id="" style="font-size: 20px;margin-top: 25px;">
-                    <option>Select Guests</option>
+                <select id="guests" style="height:40px;" required>
+                    <option value="">Select Guests</option>
                     <option value="1">1 Guests</option>
                     <option value="2">2 Guests</option>
                     <option value="3">3 Guests</option>
@@ -85,40 +82,135 @@
                     <option value="37">37 Guests</option>
                     <option value="38">38 Guests</option>
                     <option value="39">39 Guests</option>
-                  
+                    <option value="40">40 Guests</option>
+                    <option value="41">41 Guests</option>
+                    <option value="42">42 Guests</option>
+                    <option value="43">43 Guests</option>
+                    <option value="44">44 Guests</option>
+                    <option value="45">45 Guests</option>
+                    <option value="46">46 Guests</option>
+                    <option value="47">47 Guests</option>
+                    <option value="48">48 Guests</option>
+                    <option value="49">49 Guests</option>
+                    <option value="50">50 Guests</option>
                 </select>
-            
-            
-            <button style="font-size: 20px;background-color: rgb(62, 122, 190);color: aliceblue; margin-top: 25px;" >Search</button>
+              <button style="height:40px;" id="search-btn">SEARCH</button>
             </div>
         </div>
     </div>
 
-    <div id="destination heading" style="font-size: 35px; color: gray; width: 98%; margin: auto;">
+    <div id="destination-heading">
         <p>Top Destinations</p>
     </div>
 
 
-    <div id="slider" style="display: grid;grid-template-columns: repeat(5,1fr);border: 1px solid black;">
-        <div id="slideimg">
-         <h1>vikrant</h1>
-            </div>
-            <div id="slideimg">
-            <h1>vikrant</h1>
-            </div>
-            <div id="slideimg">
-            <h1>vikrant</h1>
-            </div>
-            <div id="slideimg">
-            <h1>vikrant</h1>
-            </div>
-            <div id="slideimg">
-            <h1>vikrant</h1>
-                    </div>
+    <!-- **************************************************Slider***************************************************************************** -->
 
+    <div class="first_slider_div" style="width: 98%; margin:auto;margin-top:3%;">
+        <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="containerslider">
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                    <div class="overlay-slider">
+            
+                      <a href="#" style="color:white ; text-decoration:none">
+                        <h3 style="margin-bottom:-4px; margin-top: 18%;"> Goa</h3>
+                        <p style="font-size:14px;">Vacational Rentals</p>
+                       </a> 
+                    </div>
+                  </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="containerslider">
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                    <div class="overlay-slider">
+
+                      <a href="#" style="color:white ; text-decoration:none"> 
+                        <h3 style="margin-bottom:-4px; margin-top: 18%;"> Galle</h3>
+                        <p style="font-size:14;">Vacational Rentals</p>
+                      </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="containerslider">
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                    <div class="overlay-slider">
+                        <a href="#" style="color:white ; text-decoration:none"> 
+                        <h3 style="margin-bottom:-4px; margin-top: 18%;">Phuket</h3>
+                        <p style="font-size:14;">Vacational Rentals</p>
+                        </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="containerslider">
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                    <div class="overlay-slider">
+           <a href="#" style="color:white ; text-decoration:none"> 
+                        <h3 style="margin-bottom:-4px; margin-top: 18%;">Kandy</h3>
+                        <p style="font-size:14;">Vacational Rentals</p>
+           </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="containerslider">
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                <div class="overlay-slider">
+                  <a href="#" style="color:white ; text-decoration:none"> 
+                    <h3 style="margin-bottom:-4px; margin-top: 18%;">Koh Samui</h3>
+                    <p style="font-size:14;">Vacational Rentals</p>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide"><div 
+                class="containerslider">
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                <div class="overlay-slider">
+       <a href="#" style="color:white ; text-decoration:none"> 
+                    <h3 style="margin-bottom:-4px; margin-top: 18%;">Lonavala</h3>
+                    <p style="font-size:14;">Vacational Rentals</p>
+       </a>
+                </div>
+              </div></div>
+            <div class="swiper-slide">
+                <div class="containerslider">
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                <div class="overlay-slider">
+       <a href="#" style="color:white ; text-decoration:none"> 
+                    <h3 style="margin-bottom:-4px; margin-top: 18%;">kerlaa</h3>
+                    <p style="font-size:14;">Vacational Rentals</p>
+       </a>
+                </div>
+              </div></div>
+            <div class="swiper-slide"><div class="containerslider">
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                <div class="overlay-slider">
+                    <a href="#" style="color:white ; text-decoration:none"> 
+                    <h3 style="margin-bottom:-4px; margin-top: 18%;">Pattaya</h3>
+                    <p style="font-size:14;">Vacational Rentals</p>
+                    </a>
+                </div>
+              </div></div>
+            <div class="swiper-slide"><div class="containerslider">
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                <div class="overlay-slider">
+                    <a href="#" style="color:white ; text-decoration:none"> 
+                    <h3 style="margin-bottom:-4px; margin-top: 18%;">Himachal Pradesh</h3>
+                    <p style="font-size:14;">Vacational Rentals</p>
+                    </a>
+                </div>
+              </div></div>
+        </div>
+        <div class="swiper-button-next" style="color: whitesmoke"></div>
+        <div class="swiper-button-prev"  style="color: whitesmoke"></div>
+        </div>
     </div>
 
-
+<!-- ******************************************************community*************************************** -->
 
     <div id="two-box" style="display: flex;height: 620px;width: 98%;margin: auto;gap: 3%;margin-top: 50px">
 
@@ -153,7 +245,10 @@
    
     </div>
     </div>
-<div id="destiny"  style=" display: grid; grid-template-columns: repeat(4,1fr);grid-template-rows: repeat(3,1fr); width: 70%;column-gap: 3%;row-gap: 10%;">   
+
+    <!-- ****************************************************************box 10-pages*************************************************************** -->
+
+<div id="destiny">   
 
 
     <div id="boxes1" style="background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg);background-size: cover;">
@@ -177,33 +272,33 @@
 </a>
 </div>
 <div id="boxes5"style="background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16721/photo_1024/a85131caf1a511e9924e0a8e1b1ce4da_photo_1024.jpeg);background-size: cover;">
-    <a href="#" style="text-decoration: none;">
+    <a href="../managed_paged/pages/purvanchalpage.html" style="text-decoration: none;">
     <h2 style="color:white;margin-top:40px;margin-left:30px">Puravankara Adora De Goa</h2>
 </a>
 </div>
 <div id="boxes5"style="background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16725/photo_1024/cc19e8ccf70e11e992500a8e1b1ce4da_photo_1024.jpeg);background-size: cover;">
     
-    <a href="#" style="text-decoration: none;">
+    <a href="../managed_paged/pages/umaiyapage.html" style="text-decoration: none;">
     <h2 style="color:white;margin-top:40px;margin-left:30px">Umiya Serene In Candolim</h2>
 </a>
 </div>
 <div id="boxes5"style="background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16726/photo_1024/213f117ff1a711e9924e0a8e1b1ce4da_photo_1024.jpeg);background-size: cover;">
-    <a href="#" style="text-decoration: none;">
+    <a href="../managed_paged/pages/OasisPage.html" style="text-decoration: none;">
     <h2 style="color:white;margin-top:40px;margin-left:30px">Oasis Alibaug</h2>
 </a>
 </div>
 <div id="boxes5"style="background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16727/photo_1024/92a02d4af1a511e9924e0a8e1b1ce4da_photo_1024.jpeg);background-size: cover;">
-    <a href="#" style="text-decoration: none;">
+    <a href="../managed_paged/pages/DreamzPage.html" style="text-decoration: none;">
     <h2 style="color:white;margin-top:40px;margin-left:30px">Dreamz Shiroda</h2>
 </a>
 </div>
 <div id="boxes5"style="background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16728/photo_1024/de6bc87af1a411e9924e0a8e1b1ce4da_photo_1024.jpeg);background-size: cover;">
-    <a href="#" style="text-decoration: none;">
+    <a href="../managed_paged/pages/pristinepage.html" style="text-decoration: none;">
     <h2 style="color:white;margin-top:40px;margin-left:30px">Pristine Bay Mahabalipuram</h2>
 </a>
 </div>
 <div id="boxes5"style="background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16729/photo_1024/58bf80c4f70b11e992500a8e1b1ce4da_photo_1024.jpeg);background-size: cover;">
-    <a href="#" style="text-decoration: none;">
+    <a href="../managed_paged/pages/Ampelonpage.html" style="text-decoration: none;">
     <h2 style="color:white;margin-top:40px;margin-left:30px">Ampelon Chikkaballapur</h2>
 </a>
 </div>
@@ -243,7 +338,7 @@
          
     </div>
     <div style="margin-top: 3%;">
-        <a href="#" style="text-align:center; margin-left: 30%; margin-top:20% ;text-decoration: none; font-size: 15px; padding: 10px 20px 20px 10px; background-color:#1e87f0; color:white;">EXPLAIN EXPLORE OPPORTUNITIES</a>
+        <a id="explore-btn" href="#" >EXPLAIN EXPLORE OPPORTUNITIES</a>
     </div>
     
    
@@ -280,19 +375,217 @@
      
 </div>
 <div style="margin-top: 3%;">
-    <a href="#" style="text-align:center; margin-left: 30%; margin-top:20% ;text-decoration: none; font-size: 15px; padding: 10px 20px 20px 10px; background-color:#1e87f0; color:white;">LIST YOUR PROPERTY </a>
+    <a  id="list-property-btn" href="#" >LIST YOUR PROPERTY </a>
+</div>
+</div>
 </div>
 
 
+<!-- ***********************************************footer -slider ********************************************************* -->
 
+
+<div class="first_slider_div" style="width: 98%; margin:auto;margin-top: 4%;">
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="containerslider">
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                <div class="overlay-slider">
+        
+                    <h3 style="margin-bottom:-15px; margin-top: 19%;">PHUket's Best Pool Villas</h3>
+                    <!-- <p style="font-size:20px;">Villas</p> -->
+                </div>
+              </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="containerslider">
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                <div class="overlay-slider">
+        
+                    <h3 style="margin-bottom:-15px; margin-top: 19%;">Coorg HomeStays</h3>
+                
+                </div>
+              </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="containerslider">
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                <div class="overlay-slider">
+        
+                    <h3 style="margin-bottom:-15px; margin-top: 19%;">Family Bungalows in London</h3>
+              
+                </div>
+              </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="containerslider">
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+                <div class="overlay-slider">
+        
+                    <h3 style="margin-bottom:-15px; margin-top: 19%;">Bali Family</h3>
+                   
+                </div>
+              </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="containerslider">
+            <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+            <div class="overlay-slider">
+    
+                <h3 style="margin-bottom:-15px; margin-top: 19%;">Apartment near the Louvre in Paris</h3>
+             
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide"><div 
+            class="containerslider">
+            <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+            <div class="overlay-slider">
+    
+                <h3 style="margin-bottom:-15px; margin-top: 19%;"> Cheap Affordable Homestays & Resorts in sakleshpur</h3>
+             
+            </div>
+          </div></div>
+        <div class="swiper-slide">
+            <div class="containerslider">
+            <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+            <div class="overlay-slider">
+    
+                <h3 style="margin-bottom:-15px; margin-top: 19%;">Luxuary Vocation in  Goa</h3>
+               
+            </div>
+          </div></div>
+        <div class="swiper-slide"><div class="containerslider">
+            <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+            <div class="overlay-slider">
+    
+                <h3 style="margin-bottom:-15px; margin-top: 19%;">Nilgiries</h3>
+          
+            </div>
+          </div></div>
+        <div class="swiper-slide"><div class="containerslider">
+            <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
+            <div class="overlay-slider">
+    
+                <h3 style="margin-bottom:-15px; margin-top: 19%;">Thailand Luxury Apartments</h3>
+               
+            </div>
+          </div></div>
+    </div>
+    <div class="swiper-button-next" style="color: whitesmoke"></div>
+    <div class="swiper-button-prev"  style="color: whitesmoke"></div>
+    </div>
 </div>
 
-
-
-
+<div style="width: 98%; margin:auto; color: #1e87f0;font-size: 18px; margin-top: 2%;" >
+    <a href="../Vacation Ideas/ideas.html" style="text-decoration:none; margin-left: 1%;">SHOW ALL IDEAS</a>
 </div>
 
-
-
+<!-- ***************************************888footer*********************************************************************** -->
+<div id="countries" style="margin-bottom: 30px;">
+    <div >
+        <div id="asian_countries">ASIA</div>
+        <div id="europe_countries">EUROPE</div>
+        <div id="northamerica_countries">NORTH AMERICA</div>
+        <div id="south_america">SOUTH AMERICA</div>
+        <div id="africa_countries">AFRICA</div>
+        <div id="oceania_countries">OCEANIA</div>
+    </div>
+    <div id="countries_output" >
+        <div class="showlist"></div>
+        <div class="showlist1 flag"></div>
+        <div class="showlist2 flag"></div>
+        <div class="showlist3 flag"></div>
+        <div class="showlist4 flag"></div>
+        <div class="showlist5 flag"></div>
+    </div>
+</div>
 </body>
 </html>
+<script src="../day-1/component.js"></script>
+<script type="module">
+    
+      import navbar from "../day-1/navbar.js"
+    // console.log(navbar())
+    let container=document.getElementById("container")
+    container.innerHTML=navbar()
+   
+   </script>
+   <script src="./timeout.js"></script>
+
+   <script src="../top destination/slider.js"></script>
+ <script type="module" src="./slider.js">
+ import city from "./city.js";
+
+ let addlist=document.querySelector(".addlist");
+ addlist.innerHTML=city();
+</script>
+
+<script type="module"> 
+
+import nav from "./navbar/nav.js";
+</script>
+<script src="./home.js"></script>
+<script>
+ document.querySelector("#search-btn").addEventListener("click",collectdata)
+
+ var arr=JSON.parse(localStorage.getItem("searchData"))||[]
+
+function newuser(n,im,e,c){
+  this.country=n,
+  this.checkin=im,
+  this.checkout=e,
+  this.guests=c
+
+}
+
+
+function collectdata(event){
+  event.preventDefault()
+  var country=document.querySelector("#country").value
+    var checkin=document.querySelector("#date1").value;
+  var checkout=document.querySelector("#date2").value
+  var guests=document.querySelector("#guests").value
+
+  if(country==""|| guests==""|| checkin=="" || checkout==""){
+    alert("enter input")
+  }
+  else{
+console.log(searchdata)
+arr.push(searchdata)
+console.log(arr.length)
+localStorage.setItem("searchData",JSON.stringify(arr))
+    var searchdata=new newuser(country,checkin,checkout,guests)
+    window.location.href="searchpage.html"
+  }
+  } 
+</script>
+<script src="../footer/footer.js"></script>
+<script type="module">
+    import Asia from "../footer/Asia.js";
+    let showlist=document.querySelector(".showlist");
+    showlist.innerHTML=Asia();
+    
+    import Europe from "../footer/Europe.js";
+    let showlist1=document.querySelector(".showlist1");
+    showlist1.innerHTML=Europe();
+
+    import NorthAmerica from "../footer/NorthAmerica.js";
+    let showlist2=document.querySelector(".showlist2");
+    showlist2.innerHTML=NorthAmerica();
+
+    import SouthAmerica from "../footer/SouthAmerica.js";
+    let showlist3=document.querySelector(".showlist3");
+    showlist3.innerHTML=SouthAmerica();
+
+    import Africa from "../footer/Africa.js";
+    let showlist4=document.querySelector(".showlist4");
+    showlist4.innerHTML=Africa();
+
+    import Oceania from "../footer/Oceania.js";
+    let showlist5=document.querySelector(".showlist5");
+    showlist5.innerHTML=Oceania();
+</script>
+    
+ 
+
