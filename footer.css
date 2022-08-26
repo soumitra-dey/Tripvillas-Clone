@@ -1,0 +1,119 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProximaNovaLight,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+#countries{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+#countries>:first-child{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+#asian_countries{
+    border-bottom: 1px solid rgb(2, 104, 206);
+}
+#europe_countries{
+    border-bottom: 1px solid rgb(2, 104, 206);
+}
+#northamerica_countries{
+    border-bottom: 1px solid rgb(2, 104, 206);
+}
+#south_america{
+    border-bottom: 1px solid rgb(2, 104, 206);
+}
+#africa_countries{
+    border-bottom: 1px solid rgb(2, 104, 206);
+}
+#oceania_countries{
+    border-bottom: 1px solid rgb(2, 104, 206);
+}
+#countries>:first-child>:nth-child(2){
+    margin-left: 25px;
+}
+
+#countries>:first-child>:nth-child(3){
+    margin-left: 25px;
+}
+
+#countries>:first-child>:nth-child(4){
+    margin-left: 25px;
+}
+
+#countries>:first-child>:nth-child(5){
+    margin-left: 25px;
+}
+
+#countries>:first-child>:nth-child(6){
+    margin-left: 25px;
+}
+#countries>:first-child>div{
+    font-size: 14px;
+}
+.showlist{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+gap: 10px;
+margin-top: 15px;
+}
+.showlist1{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+gap: 10px;
+margin-top: 15px;
+}
+.showlist2{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+gap: 10px;
+margin-top: 15px;
+}
+.showlist3{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+gap: 10px;
+margin-top: 15px;
+}
+.showlist4{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+gap: 10px;
+margin-top: 15px;
+}
+.showlist5{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+gap: 10px;
+margin-top: 15px;
+}
+.showlist.flag{
+display: none;
+}
+.showlist1.flag{
+display: none;
+}
+.showlist2.flag{
+display: none;
+}
+.showlist3.flag{
+display: none;
+}
+.showlist4.flag{
+display: none;
+}
+.showlist5.flag{
+display: none;
+}
+#countries_output p:first-child{
+font-size: 16px;
+margin-bottom: 0px;
+color: rgb(59, 59, 59);
+}
+#countries_output p:nth-child(2){
+font-size: 14px;
+color: rgb(124, 124, 124);
+}
