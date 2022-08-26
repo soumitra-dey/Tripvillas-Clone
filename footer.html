@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+    <div id="countries">
+        <div >
+            <div id="asian_countries">ASIA</div>
+            <div id="europe_countries">EUROPE</div>
+            <div id="northamerica_countries">NORTH AMERICA</div>
+            <div id="south_america">SOUTH AMERICA</div>
+            <div id="africa_countries">AFRICA</div>
+            <div id="oceania_countries">OCEANIA</div>
+        </div>
+        <div id="countries_output">
+            <div class="showlist"></div>
+            <div class="showlist1 flag"></div>
+            <div class="showlist2 flag"></div>
+            <div class="showlist3 flag"></div>
+            <div class="showlist4 flag"></div>
+            <div class="showlist5 flag"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="module">
+    import Asia from "./component/Asia.js";
+    let showlist=document.querySelector(".showlist");
+    showlist.innerHTML=Asia();
+    
+    import Europe from "./component/Europe.js";
+    let showlist1=document.querySelector(".showlist1");
+    showlist1.innerHTML=Europe();
+
+    import NorthAmerica from "./component/NorthAmerica.js";
+    let showlist2=document.querySelector(".showlist2");
+    showlist2.innerHTML=NorthAmerica();
+
+    import SouthAmerica from "./component/SouthAmerica.js";
+    let showlist3=document.querySelector(".showlist3");
+    showlist3.innerHTML=SouthAmerica();
+
+    import Africa from "./component/Africa.js";
+    let showlist4=document.querySelector(".showlist4");
+    showlist4.innerHTML=Africa();
+
+    import Oceania from "./component/Oceania.js";
+    let showlist5=document.querySelector(".showlist5");
+    showlist5.innerHTML=Oceania();
+</script>
+
+<script src="./footer.js"></script>
