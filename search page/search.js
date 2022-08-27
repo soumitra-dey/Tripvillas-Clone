@@ -226,3 +226,42 @@ document.querySelector("#sortbyprice").addEventListener("change",function(){
 })
 
 
+document.querySelector("#filter_open_btn").addEventListener("click", function(){
+    document.querySelector(".append_filterdata").classList.add("filter_flag")
+    document.querySelector("#main").style.overflow="hidden"
+})
+
+document.querySelector("#filter_btn_cancel").addEventListener("click", function(){
+    document.querySelector(".append_filterdata").classList.remove("filter_flag")
+    document.querySelector("#main").style.overflow="scroll"
+})
+
+document.querySelector("#modify_open_btn").addEventListener("click", function(){
+    document.querySelector(".append_modify").classList.add("modify_flag")
+    document.querySelector("#main").style.overflow="hidden"
+})
+
+document.querySelector("#modify_btn_cancel").addEventListener("click", function(){
+    document.querySelector(".append_modify").classList.remove("modify_flag")
+    document.querySelector("#main").style.overflow="scroll"
+})
+
+document.querySelector("#filter_btn_apply").addEventListener("click", function(){
+    let s_pool=document.querySelector("#s_pool");
+    if (s_pool.checked==true) {
+        let filter_data=data.filter(function(a){
+            let flag=false;
+            for (let i=0;i<a.specs.length;i++) {
+                if (a.specs[i]=="SWIMMING POOL"){
+                    flag=true;
+                    break;
+                }
+            }
+            return flag==true;
+        })
+        appenddata(filter_data);
+    }
+    document.querySelector(".append_filterdata").classList.remove("filter_flag")
+    document.querySelector("#main").style.overflow="scroll"
+})
+

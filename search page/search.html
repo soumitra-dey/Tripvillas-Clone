@@ -13,11 +13,11 @@
         <div id="search">
             <div id="filter">
                 <div>
-                    <div class="filter_box">
+                    <div class="filter_box" id="filter_open_btn">
                         <img src="https://i.ibb.co/447VYDx/Capture.png" alt="">
                         <span>APPLY FILTER</span>
                     </div>
-                    <div class="filter_box">
+                    <div class="filter_box" id="modify_open_btn">
                         <img src="https://i.ibb.co/Zh49Js7/Capture2.png" alt="">
                         <span>MODIFY SEARCH</span>
                     </div>
@@ -41,6 +41,299 @@
         <div class="mapouter">
             <div class="gmap_canvas">
                 <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=india&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="append_filterdata">
+        <div id="full">
+            <div id="filter_box">
+                <div id="filter_datas">
+                    <div>
+                        <h3>Features</h3>
+                        <div>
+                            <input type="checkbox" id="s_pool" value="s_pool"> <span>Swimming Pool</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="ac" value="ac"> <span>Air Conditioner</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="net" value="net"> <span>Internet</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tv" value="tv"> <span>Television</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="parking" value="parking"> <span>Parking</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="h_keep" value="h_keep"> <span>Housekeeping</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="f_ktn" value="f_ktn"> <span>Functional Kitchen</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="w_mcn" value="w_mcn"> <span>Washing Machine</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="s_pool" value="s_pool"> <span>Dish Washer</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="ref" value="ref"> <span>Refrigerator</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gym" value="gym"> <span>Gym</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="spa" value="spa"> <span>Spa</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="coc" value="coc"> <span>Cook On Call</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Property Type</h3>
+                            <div>
+                                <input type="checkbox"> <span>Luxury Yacht</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Camping Ground</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Farm</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Homestay</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Apartment</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Villa</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Hostel</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Serviced Apartment</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Ryokan (Japanese Inn)</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Bed and Breakfast</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Resort</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Boutique Hotel</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Bungalow</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Caravan</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Chalet</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Guesthouse</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Hotel</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Cottage</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Castle</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>HouseBoats</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Home</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Room</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Cabin</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Holiday park</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Lodge</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Condo</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Studio</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"> <span>Tent</span>
+                            </div>  
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Bedrooms</h3>
+                        <div>
+                            <div>
+                                <input type="radio" id="any">
+                                <label for="any">Any</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="a">
+                                <label for="a">1+</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="b">
+                                <label for="b">2+</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="c">
+                                <label for="c">3+</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="d">
+                                <label for="d">4+</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="e">
+                                <label for="e">5+</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="f">
+                                <label for="f">6+</label>
+                            </div>
+                            
+                        </div>
+                        <h3>Bathrooms</h3>
+                        <div>
+                            
+                            <div>
+                                <input type="radio" id="any">
+                                <label for="any">Any</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="a">
+                                <label for="a">1+</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="b">
+                                <label for="b">2+</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="c">
+                                <label for="c">3+</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="d">
+                                <label for="d">4+</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="e">
+                                <label for="e">5+</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="f">
+                                <label for="f">6+</label>
+                            </div>
+                        </div>
+                        <h3>Price Per Night</h3>
+                        <img src="https://i.ibb.co/5L8q10k/Screenshot-2022-08-27-124051.png" alt="">
+                    </div>
+                </div>
+                <div id="filter_btn">
+                    <button id="filter_btn_cancel">CANCEL</button>
+                    <button id="filter_btn_apply">APPLY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="append_modify">
+        <div id="full2">
+            <div id="filter_box2">
+                <div id="filter_datas2">
+                    <h3>Modify Search</h3>
+                    <div>
+                        <img src="https://i.ibb.co/n1L27wJ/Screenshot-2022-08-27-163608.png" alt="">
+                        <input type="text">
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://i.ibb.co/dL9VtbW/Screenshot-2022-08-24-101433.png" alt="">
+                            <input placeholder="Check In" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
+                        </div>
+                        <div>
+                            <img src="https://i.ibb.co/K6y5m1m/Screenshot-2022-08-24-101448.png" alt="">
+                            <input placeholder="Check Out" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
+                        </div>
+                    </div>
+                    <div>
+                        <select name="" id="">
+                            <option>Select Guests</option>
+                            <option value="1">1 Guests</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7">7 Guests</option>
+                            <option value="8">8 Guests</option>
+                            <option value="9">9 Guests</option>
+                            <option value="10">10 Guests</option>
+                            <option value="11">11 Guests</option>
+                            <option value="12">12 Guests</option>
+                            <option value="13">13 Guests</option>
+                            <option value="14">14 Guests</option>
+                            <option value="15">15 Guests</option>
+                            <option value="16">16 Guests</option>
+                            <option value="17">17 Guests</option>
+                            <option value="18">18 Guests</option>
+                            <option value="19">19 Guests</option>
+                            <option value="20">20 Guests</option>
+                            <option value="21">21 Guests</option>
+                            <option value="22">22 Guests</option>
+                            <option value="23">23 Guests</option>
+                            <option value="24">24 Guests</option>
+                            <option value="25">25 Guests</option>
+                            <option value="26">26 Guests</option>
+                            <option value="27">27 Guests</option>
+                            <option value="28">28 Guests</option>
+                            <option value="29">29 Guests</option>
+                            <option value="30">30 Guests</option>
+                            <option value="31">31 Guests</option>
+                            <option value="32">32 Guests</option>
+                            <option value="33">33 Guests</option>
+                            <option value="34">34 Guests</option>
+                            <option value="35">35 Guests</option>
+                            <option value="36">36 Guests</option>
+                            <option value="37">37 Guests</option>
+                            <option value="38">38 Guests</option>
+                            <option value="39">39 Guests</option>
+                            <option value="40">40 Guests</option>
+                            <option value="41">41 Guests</option>
+                            <option value="42">42 Guests</option>
+                            <option value="43">43 Guests</option>
+                            <option value="44">44 Guests</option>
+                            <option value="45">45 Guests</option>
+                            <option value="46">46 Guests</option>
+                            <option value="47">47 Guests</option>
+                            <option value="48">48 Guests</option>
+                            <option value="49">49 Guests</option>
+                            <option value="50">50 Guests</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button>SEARCH</button>
+                        <button id="modify_btn_cancel">CANCEL</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
