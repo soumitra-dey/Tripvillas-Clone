@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet"  href="../day-1/navbar.css">
+    <title>ideas</title>
     <style>
         *{
             font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif;
@@ -52,7 +53,7 @@
 </head>
 <body>
     <div>
-        <div></div>
+        <div id="container"></div>
         <h1>Explore Some Of the Vacation Ideas</h1>
         <div id="divs">
             <div class="villas" style="background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/collection/phuket.jpg);">
@@ -132,3 +133,12 @@
     </div>
 </body>
 </html>
+<script src="../day-1/component.js"></script>
+<script type="module">
+    
+      import navbar from "../day-1/navbar.js"
+    // console.log(navbar())
+    let container=document.getElementById("container")
+    container.innerHTML=navbar()
+   
+   </script>

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../day-1/navbar.css">
+    <title>KASERA</title>
 </head>
 <style>
-.container {
+.maincontainer {
     position: relative;
   width: 100%;
  height: 480px;
@@ -26,7 +27,7 @@
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1; 
   width: 100%;
-  height:520px;
+  height:490px;
  
   opacity:1;
   color: white;
@@ -41,7 +42,8 @@
  
 </style>
 <body>
-    <div class="container">
+    <div id="container"></div>
+    <div class="maincontainer">
         <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_1024/3a17e0ebf71b11e992500a8e1b1ce4da_photo_1024.jpeg" alt="Avatar" class="image">
        
         <div class="overlay">
@@ -282,23 +284,14 @@
 <div>
     <img src="../images/img10.PNG" alt="">
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
+<script src="../../day-1/component.js"></script>
+<script type="module">
+    
+      import navbar from "../../day-1/navbar.js"
+    // console.log(navbar())
+    let container=document.getElementById("container")
+    container.innerHTML=navbar()
+   
+   </script>
