@@ -1,0 +1,448 @@
+*{
+    font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+#Free{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    height: auto;
+    margin: auto;
+}
+.BookTensionFree{
+    width: 100%;
+    height: 100%;
+}
+
+#box1{
+    width: 92%;
+    background-color:  #1e87f0;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+    height: 250px;
+    padding: 15px 0px 0px 32.5px;
+    margin: 20px 20px 20PX 15px;
+    color: white;
+
+}
+#box1>ul>li{
+    line-height:1cm;
+    font-weight: 600;
+}
+#box1>h2{
+    font-size: large;
+    font-weight: bold;
+}
+#box2{
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+    width: 96.2%;
+    margin: auto;
+    display: flex;
+    height: 130px;
+    margin-bottom: 20px;
+}
+#box2>div:nth-child(1){
+    width: 40%; 
+}
+#box2>div:nth-child(2){
+    width: 60%;
+    padding: 5px;
+    background-color: white;
+}
+#box2>div>img{
+    width: 100%;
+    height: 100%;
+}
+#box2>div>h5{
+    font-weight: normal;
+    line-height: 0%;
+    color: #999999;
+}
+#box2>div>h2{
+    font-weight: normal;
+    line-height: 0%;
+}
+#box2>div>p{
+    font-weight:600;
+    line-height: 0%;
+    color: #666666;
+    margin-left: 0%;
+}
+#datesshow{
+    width: 96.2%;    
+    display: flex;
+    margin-bottom: 20px;
+    margin: auto;
+}
+#datesshow>div{
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+    width: 23%;
+    height: 100px;
+    margin: auto;
+}
+
+#datesshow>div>h3,p{
+    line-height: 0%;
+    margin: 35px;
+    text-align: center;
+    color: #999999;
+    font-weight: 500;
+}
+#datesshow>div>h3{
+    color: #4c4b4b;
+    font-weight: bold;
+}
+.Agreecontinue{
+    width: 100%;
+    height: 100%;
+ }
+ #box7{
+    width: 100%;
+    height: auto;
+ }
+
+ #box7>p{
+    background-color: #FFF6EE;
+    color: #FAA05A;
+    width: 95%;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+ }
+
+ #information{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid #4c4b4b;
+    margin-bottom: 20px;
+   
+ }
+
+ #information>div:nth-child(1){
+    width: 6%;
+    margin: 5px;
+    margin-left: 0px;
+ }
+
+ #information>div:nth-child(2){
+    width: 90%;
+    margin: 5px;
+ }
+
+ #information>div>img{
+    width: 100%;
+ }
+
+ #nameLast{
+    width: 100%;
+    margin: auto;
+ }
+
+ #nameLast>div>input{
+    width: 45%;
+    height: 30px;
+    margin: 0px 5px 10px 20px;
+    border: 1px solid #cccccc;
+ }
+ #nameLast>div>input:nth-child(1){
+    width: 10%;
+ }
+
+ #nameLast>div>input:nth-child(2){
+    width: 78%;
+ }
+
+ #nameLast>input{
+    width: 93.2%;
+    margin: auto;
+    height: 30px;
+    margin-left: 20px;
+    border: 1px solid #cccccc;
+ }
+
+ #box8{
+    width: 95%;
+    margin: auto;
+    padding-bottom: 10px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+ }
+
+ #nameLast>div>input#id2{
+    width: 40%;
+ }
+
+ #nameLast>div>input#id3{
+    width: 48%;
+ }
+
+ #box9{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    height: 250px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+ }
+ #box9>div{
+    display: flex;
+    border-bottom: 1px solid #4c4b4b;
+    margin-bottom: 20px;
+ }
+ 
+
+ #box9>div>div:nth-child(1){
+    width: 10%;
+  }
+
+  #box9>div>div:nth-child(2){
+    width: 80%;
+    margin: auto;
+  }
+
+ #box9>div>div>img{
+   width: 60%;
+   margin-left: 10px;
+   margin-top: 4px;
+ }
+
+ #box9>input{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    margin-left: 30px;
+    border: 1px solid #cccccc;
+ }
+ #box10{
+    width: 95%;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+    margin: auto;
+ }
+
+ #box10>#bookingOpt{
+    width: 92%;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid #4c4b4b;
+    display: flex;
+    margin: auto;
+ }
+
+ #box10>#bookingOpt>div:nth-child(1){
+    width: 10%;
+    margin: auto;
+ }
+
+ #box10>#bookingOpt>div:nth-child(2){
+    width: 80%;
+    margin: auto;
+ }
+
+ #box10>#bookingOpt>div>img{
+    width: 90%;
+ }
+
+ #box10>#bookingOpt>div>h2{
+    font-size: larger;
+    font-weight: 500;
+    color: #4c4b4b;
+ }
+
+ #box10>#payNow{
+    display: flex;
+    width: 92%;
+    margin: auto;
+    border: 3px solid #1e87f0;
+    margin-top: 20px;
+ }
+
+
+ #box10>#payNow>div:nth-child(1){
+    width: 35%;
+   }
+
+   #box10>#payNow>div:nth-child(2){
+    padding: 10px;
+   }
+
+ #box10>#payNow>div>img{
+    width: 40%;
+    margin: auto;
+    margin-left: 40px;
+    margin-top: 20px;
+ }
+
+ #box10>#payNow>div>p{
+   line-height: 1.5;
+   font-weight: normal;
+   text-align: left;
+   margin-left: 0px;
+   margin-top: 0px;
+ }
+
+ #box10>#payNow>div>h5{
+    font-weight: 600;
+    text-align: left;
+    color: #4c4b4b;
+    margin-bottom: 0px;
+  }
+
+  #box10>#payNow>div>h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    color: #4c4b4b;
+    margin-top: 0px;
+  }
+
+  #box10>#chooseMethod{
+    border: 1px solid #666666;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+
+  #box10>#chooseMethod>h2{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #666666;
+    margin-left: 5px;
+    margin-bottom: 0%;
+  }
+
+  #box10>#chooseMethod>h5{
+    font-size: 13px;
+    text-align: left;
+    color: #4c4b4b;
+    margin-top: 2px;
+    margin-left: 5px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  #box10>#chooseMethod>h5>strong{
+    font-size: 13px;
+    text-align: left;
+    color: #4c4b4b;
+    margin-top: 2px;
+    margin-left: 5px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+
+  #box10>#chooseMethod>button{
+    font-size: 15px;
+    text-align: left;
+    color: #4c4b4b;
+    margin-top: 2px;
+    margin-left: 5px;
+    font-weight: 600;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    background-color: #F0506E;
+    color: white;
+    border: navajowhite;
+  }
+
+  #box11{
+    width: 92%;
+    margin: auto;
+    background-color: #b7b4b4;
+    height: 70px;
+  }
+
+  #box11>p{
+    color: whitesmoke;
+    text-align: left;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+
+  #box11>p>a{
+    color: whitesmoke;
+    text-align: left;
+    line-height: 1.5;
+    padding-top: 10px;
+    text-decoration: none;
+  }
+
+  #box12{
+    width: 92%;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #box12>button{
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    background-color: #1e87f0;
+    border: none;
+    color: rgb(225,255,255);
+  }
+  
+  .Agreecontinue>#subTotal{
+    display: flex;
+    width: 92%;
+    margin: auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .Agreecontinue>#Discount{
+    display: flex;
+    width: 92%;
+    margin: auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .Agreecontinue>#tax1{
+    display: flex;
+    width: 92%;
+    margin: auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .Agreecontinue>#TotalRatePlane{
+    display: flex;
+    width: 92%;
+    margin: auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #666666;
+    border-top: 1px solid #666666;
+  }
+
+  .Agreecontinue>#TotalRatePlane>div>span{
+    font-weight: bold;
+  }
+
+  .NOCharge{
+    margin-left: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #666666;
+  }
+
+  .RatrPlane{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #4c4b4b;
+    font-weight: 800;
+  }
