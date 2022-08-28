@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./search.css">
+    <link rel="stylesheet" href="../day-1/navbar.css">
+    <link rel="stylesheet" href="../signin_outpage/signin.css">
+    <link rel="stylesheet" href="../signin_outpage/signup.css">
 </head>
 <body>
-    <div id="navbar"></div>
+    <div id="navbar">
+        
+    </div>
     <div id="main">
         <div id="search">
             <div id="filter">
@@ -339,4 +344,16 @@
     </div>
 </body>
 </html>
+
+
+<script type="module">
+    
+    import navbar from "../day-1/navbar.js"
+    let container=document.getElementById("navbar")
+    container.innerHTML=navbar()
+   
+</script>
 <script src="./search.js"></script>
+<script src="../day-1/component.js"></script>
+<script src="../signin_outpage/signin.js"></script>
+<script src="../signin_outpage/signup.js"></script>

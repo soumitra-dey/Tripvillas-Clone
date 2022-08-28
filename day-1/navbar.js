@@ -8,13 +8,14 @@ function getnavbar(){
         </h1>
         
         <ul class="right">
-            <ul id="signin"><span><img id="userimg" src="https://i.ibb.co/7N39t8r/Capture3.png" alt="error"></span>
+            <ul id="signin"><span><img id="userimg" src="https://i.ibb.co/7N39t8r/Capture3.png" alt="error"></span><span id="name1"></span>
                 <ul id="sign">
-                    <li ><a href="../signin_outpage/signin.html">SIGN IN</a> </li>
-                    <li ><a href="../signin_outpage/signup.html">SIGN UP</a> </li>
+                    <li id="signin_page">SIGN IN </li>
+                    <li id="signup_page">SIGN UP</li>
                 </ul>
                 
             </ul>
+            
             <ul id="atul" ><span id="rohit">INR</span>
                <i style="color:white" class="fas fa-caret-down"></i>
                 <ul id="alex">
@@ -86,7 +87,166 @@ function getnavbar(){
         </ul>
 
     </nav>
-</header>`
+</header> 
+<div id="sigin">
+    <div id="div">
+        <h1>Sign In</h1>
+       <hr />
+       <form action="">
+       <div id="numberbar">
+         <select name="" id="select">
+           <option value="">+1</option>
+           <option value="">+7</option>
+           <option value="">+20</option>
+           <option value="">+27</option>
+           <option value="">+30</option>
+           <option value="">+31</option>
+           <option value="">+32</option>
+           <option value="">+33</option>
+           <option value="">+34</option>
+           <option value="">+36</option>
+           <option value="">+39</option>
+           <option value="">+40</option>
+           <option value="">+41</option>
+           <option value="">+43</option>
+           <option value="">+44</option>
+           <option value="">+45</option>
+           <option value="">+46</option>
+           <option value="">+47</option>
+           <option value="">+49</option>
+           <option value="">+51</option>
+           <option value="">+52</option>
+           <option value="">+53</option>
+           <option value="">+54</option>
+           <option value="">+55</option>
+           <option value="">+56</option>
+           <option value="">+57</option>
+           <option value="">+58</option>
+           <option value="">+60</option>
+           <option value="">+61</option>
+           <option value="">+62</option>
+           <option value="">+63</option>
+           <option value="">+64</option>
+           <option value="">+66</option>
+           <option value="">+81</option>
+           <option value="">+82</option>
+           <option value="">+84</option>
+           <option value="">+86</option>
+           <option value="">+90</option>
+           <option value="">+91</option>
+           <option value="">+93</option>
+           <option value="">+94</option>
+           <option value="">+95</option>
+           <option value="">+98</option>
+         </select>
+         <input type="number" id="mobile" placeholder="Mobile Number" />
+         <p id="only">Only digits allowed</p>
+       </div>
+       <hr>
+       <div id="button">
+           <input type="submit" value="signup" name="cancel" id="signup">
+           <input type="submit" value="VERIFY WITH OTP" name="VERIFY WITH OTP" id="submit" id="submit1">
+      
+       </div>
+      
+   </form>
+      </div>
+
+</div>
+<div id="div" class="signup_div">
+    <h1>Sign Up</h1>
+    <hr />
+    <form action="">
+        <div id="numberbar">
+            <select name="" id="select">
+                <option value="">+1</option>
+                <option value="">+7</option>
+                <option value="">+20</option>
+                <option value="">+27</option>
+                <option value="">+30</option>
+                <option value="">+31</option>
+                <option value="">+32</option>
+                <option value="">+33</option>
+                <option value="">+34</option>
+                <option value="">+36</option>
+                <option value="">+39</option>
+                <option value="">+40</option>
+                <option value="">+41</option>
+                <option value="">+43</option>
+                <option value="">+44</option>
+                <option value="">+45</option>
+                <option value="">+46</option>
+                <option value="">+47</option>
+                <option value="">+49</option>
+                <option value="">+51</option>
+                <option value="">+52</option>
+                <option value="">+53</option>
+                <option value="">+54</option>
+                <option value="">+55</option>
+                <option value="">+56</option>
+                <option value="">+57</option>
+                <option value="">+58</option>
+                <option value="">+60</option>
+                <option value="">+61</option>
+                <option value="">+62</option>
+                <option value="">+63</option>
+                <option value="">+64</option>
+                <option value="">+66</option>
+                <option value="">+81</option>
+                <option value="">+82</option>
+                <option value="">+84</option>
+                <option value="">+86</option>
+                <option value="">+90</option>
+                <option value="">+91</option>
+                <option value="">+93</option>
+                <option value="">+94</option>
+                <option value="">+95</option>
+                <option value="">+98</option>
+            </select>
+            <input type="number" id="mobile" placeholder="Mobile Number" />
+            <p id="only">Only digits allowed</p>
+        </div>
+
+        <input class="out" type="email" id="email" placeholder="Email Address" />
+        <input class="out" type="password" id="password" placeholder="password " /><br />
+
+        <div id="inputtag">
+            <input class="input" type="text" id="name"  placeholder="First Name" />
+            <input class="input" type="text" id="lastname" placeholder="Last Name" />
+        </div>
+        <hr />
+
+        <div id="button">
+           <a href="home.html"><input  type="submit" value="CANCEL" name="cancel" id="cancel"></a> 
+            <input type="submit" value="VERIFY WITH OTP" name="VERIFY WITH OTP" class="signup_submit" id="submit">
+
+          
+        </div>
+    </form>
+</div>
+<div class="otp_verify">
+    <div id="div">
+        <h1>Sign Up</h1>
+        <hr />
+       
+          <div id="otpdiv">
+            <input type="number" placeholder="Enter Your OTP" id="otp">
+           <a id="only" href="signup.html"><p  >Go Back</p></a> 
+          </div>
+
+           
+            
+            <hr />
+
+            <div id="button">
+                <input type="submit" value="CANCEL" name="cancel" id="cancel">
+                <input type="submit" value="VERIFY WITH OTP" name="VERIFY WITH OTP" id="submit" class="submit_otp">
+
+              
+            </div>
+    
+    </div>
+</div>`
 }
 
 export default getnavbar 

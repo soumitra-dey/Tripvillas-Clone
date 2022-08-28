@@ -176,6 +176,11 @@ let appenddata=(data)=>{
     document.querySelector("#appenddata").innerHTML="";
     data.forEach(function(elem){
         let div=document.createElement("div");
+        div.addEventListener("click",function(){
+            let clickdata=elem;
+            localStorage.setItem("clickdata", JSON.stringify(clickdata))
+            window.location.href="./buy2.html"
+        });
         let img=document.createElement("img");
         img.src=elem.image;
         child_div=document.createElement("div");

@@ -23,12 +23,12 @@
             </div>
             <div id="box2">
                 <div>
-                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/original/14145172/9.jpg" alt="">
+                <img id="box2_src" src="" alt="">
                 </div>
                 <div>
-                <h5>Property Ref Id #14145172</h5>
-                <h2>Sea Facing A/C Hut stay</h2>
-                <h5>Canacona, Goa, INDIA</h5>
+                <h5>Property Ref Id <span id="box2_id"></span></h5>
+                <h2 id="box2_name"></h2>
+                <h5 id="box2_address"></h5>
                 <p>Private Room | Accommodates max 3 guest</p>
                 </div>
             </div>
@@ -64,14 +64,14 @@
                 <div id="nameLast">
                     <div>
                         <input type="text" value=" +91">
-                        <input type="number" placeholder="Mobole Number">
+                        <input type="number" placeholder="Mobole Number" id="cus_num">
                     </div>
                     <div>
                         <input id="id2" type="text" placeholder="First Name">
                         <input id="id3" type="text" placeholder="Last Name">
                     </div>
                 
-                   <input type="email" placeholder="Email Address">
+                   <input type="email" placeholder="Email Address" id="cus_email">
                 </div>
             </div>
             <div id="box9">
@@ -90,27 +90,27 @@
         <div class="Agreecontinue">
             <div id="subTotal">
                 <div>
-                  <span>Sub Total....................................................................................................................</span>
+                  <span>Sub Total.............................................................................................................................</span>
                 </div>
-                <div><p>₹33360.00 </p></div>
+                <div><p id="s_total"></p></div>
             </div>
             <div id="Discount">    
                 <div>
-                    <span>Discount.  .................................................................................................................................</span>
+                    <span>Discount.  ..................................................................................................................................................</span>
                 </div>
                 <div><p>₹0 </p></div>
             </div>
             <div id="tax1">
                 <div>
-                    <span>Tax.....................................................................................................................................</span>
+                    <span>Tax...................................................................................................................................................</span>
                 </div>
-                <div><p>₹4003.20</p></div>
+                <div><p id="t_tax"></p></div>
             </div>
             <div id="TotalRatePlane">
                 <div>
-                    <span>Total............................................................................................................................</span>
+                    <span>Total.........................................................................................................................</span>
                 </div>
-                <div><p>₹37360.2</p></div>
+                <div><p id="total"></p></div>
             </div>
 
             <h3 class="RatrPlane">Rate Plan</h3>
@@ -152,9 +152,10 @@
                 <p>By clicking 'Agree & Continue', you are agreeing to our <a href="">Terms & Conditions, Privacy Policy,</a> Booking policies like cancellation policies, house rules.</p>
             </div>
             <div id="box12">
-                <button>AGREE & CONTINUE</button>
+                <button id="conform">AGREE & CONTINUE</button>
             </div>
         </div>
     </div>
 </body>
 </html>
+<script src="./payment.js"></script>
